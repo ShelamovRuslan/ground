@@ -55,6 +55,19 @@ Item {
         bottomEdgeRightInset:   parent.height - attitudeIndicator.y
     }
 
+    QGCButton {
+            id: testButton
+            text: "ТЕСТОВА КНОПКА"
+            anchors.top: parent.top
+            anchors.topMargin: 80
+            anchors.horizontalCenter: parent.horizontalCenter
+            z: 99999
+
+            onClicked: {
+                console.log("Кастомну кнопку натиснуто!")
+            }
+        }
+
     // This is an example of how you can use parent tool insets to position an element on the custom fly view layer
     // - we use parent topEdgeLeftInset to position the widget below the toolstrip
     // - we use parent bottomEdgeLeftInset to dodge the virtual joystick if enabled

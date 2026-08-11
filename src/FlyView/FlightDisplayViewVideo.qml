@@ -38,7 +38,7 @@ Item {
         return videoBackground.getHeight()
     }
 
-    property double _thermalHeightFactor: 0.85 //-- TODO
+    property double _thermalHeightFactor: 0.85 //-- TODO /res/NoVideoBackground.jpg
 
         Image {
             id:             noVideo

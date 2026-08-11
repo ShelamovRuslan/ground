@@ -38,4 +38,17 @@ Item {
         bottomEdgeCenterInset:  parentToolInsets.bottomEdgeCenterInset
         bottomEdgeRightInset:   parentToolInsets.bottomEdgeRightInset
     }
+
+    QGCButton {
+            text: "Кастомна кнопка"
+            anchors.top: parent.top
+            anchors.topMargin: 50
+            anchors.left: parent.left
+            anchors.leftMargin: 20
+
+            onClicked: {
+                console.log("Кастомну кнопку натиснуто!")
+                // Тут прописується логіка події або виклик методів C++ бекенду
+            }
+        }
 }
